@@ -1,6 +1,8 @@
 //import logo from './logo.svg';
 import './App.css';
 import React, { Component } from "react";
+import SetTimer from './SetTimer.js';
+import ButtonSetTime from './ButtonSetTime.js'
 
 
 function App() {
@@ -12,6 +14,8 @@ return (
           Drink water!!
         </h1>
         <div>
+        <SetTimer />
+        <ButtonSetTime />
       </div>
       </header>
     </div>
@@ -48,6 +52,6 @@ function notifyMe() {
   }
 }
 
-const setClock = setInterval(notifyMe, 1800000);
+const setClock = setInterval(notifyMe, React.useState.setTime);
 
 export default App;
